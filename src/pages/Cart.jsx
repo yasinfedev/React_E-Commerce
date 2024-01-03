@@ -13,9 +13,9 @@ const Cart = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-12 py-5 bg-light text-center">
-            <h4 className="p-3 display-5">Your Cart is Empty</h4>
+            <h4 className="p-3 display-5">Sepetiniz boş</h4>
             <Link to="/" className="btn  btn-outline-dark mx-4">
-              <i className="fa fa-arrow-left"></i> Continue Shopping
+              <i className="fa fa-arrow-left"></i> Alışverişe devam edin
             </Link>
           </div>
         </div>
@@ -49,7 +49,7 @@ const Cart = () => {
               <div className="col-md-8">
                 <div className="card mb-4">
                   <div className="card-header py-3">
-                    <h5 className="mb-0">Item List</h5>
+                    <h5 className="mb-0">Ürün Listesi</h5>
                   </div>
                   <div className="card-body">
                     {state.map((item) => {
@@ -149,7 +149,7 @@ const Cart = () => {
                       to="/checkout"
                       className="btn btn-dark btn-lg btn-block"
                     >
-                      Go to checkout
+                      Ödeme sayfasına ilerle
                     </Link>
                   </div>
                 </div>
@@ -165,7 +165,7 @@ const Cart = () => {
     <>
       <Navbar />
       <div className="container my-3 py-3">
-        <h1 className="text-center">Cart</h1>
+        <h1 className="text-center">Sepetiniz</h1>
         <hr />
         {state.length > 0 ? <ShowCart /> : <EmptyCart />}
       </div>
