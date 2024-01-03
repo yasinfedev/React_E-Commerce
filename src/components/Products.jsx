@@ -73,13 +73,13 @@ const Products = () => {
     return (
       <>
         <div className="buttons text-center py-5">
-          <button className="btn btn-outline-dark btn-sm m-2" onClick={() => setFilter(data)}>All</button>
-          <button className="btn btn-outline-dark btn-sm m-2" onClick={() => filterProduct("men's clothing")}>Men's Clothing</button>
+          <button className="btn btn-outline-dark btn-sm m-2" onClick={() => setFilter(data)}>Tüm kategoriler</button>
+          <button className="btn btn-outline-dark btn-sm m-2" onClick={() => filterProduct("men's clothing")}>Erkek giyim</button>
           <button className="btn btn-outline-dark btn-sm m-2" onClick={() => filterProduct("women's clothing")}>
-            Women's Clothing
+            Kadın giyim
           </button>
-          <button className="btn btn-outline-dark btn-sm m-2" onClick={() => filterProduct("jewelery")}>Jewelery</button>
-          <button className="btn btn-outline-dark btn-sm m-2" onClick={() => filterProduct("electronics")}>Electronics</button>
+          <button className="btn btn-outline-dark btn-sm m-2" onClick={() => filterProduct("jewelery")}>Aksesuar</button>
+          <button className="btn btn-outline-dark btn-sm m-2" onClick={() => filterProduct("electronics")}>Elektronik eşya</button>
         </div>
 
         {filter.map((product) => {
@@ -107,10 +107,10 @@ const Products = () => {
                 </ul>
                 <div className="card-body">
                   <Link to={"/product/" + product.id} className="btn btn-dark m-1">
-                    Buy Now
+                    Hemen satın al
                   </Link>
                   <button className="btn btn-dark m-1" onClick={() => addProduct(product)}>
-                    Add to Cart
+                    Sepete ekle
                   </button>
                 </div>
               </div>
@@ -126,7 +126,7 @@ const Products = () => {
       <div className="container my-3 py-3">
         <div className="row">
           <div className="col-12">
-            <h2 className="display-5 text-center">Latest Products</h2>
+            <h2 className="display-5 text-center">Son ürünler</h2>
             <hr />
           </div>
         </div>
