@@ -10,9 +10,9 @@ const Checkout = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-12 py-5 bg-light text-center">
-            <h4 className="p-3 display-5">No item in Cart</h4>
+            <h4 className="p-3 display-5">Sepette ürün yok</h4>
             <Link to="/" className="btn btn-outline-dark mx-4">
-              <i className="fa fa-arrow-left"></i> Continue Shopping
+              <i className="fa fa-arrow-left"></i> Alışverişe devam edin
             </Link>
           </div>
         </div>
@@ -38,7 +38,7 @@ const Checkout = () => {
             <div className="col-md-5 col-lg-4 order-md-last">
               <div className="card mb-4">
                 <div className="card-header py-3 bg-light">
-                  <h5 className="mb-0">Order Summary</h5>
+                  <h5 className="mb-0">Sipariş özeti</h5>
                 </div>
                 <div className="card-body">
                   <ul className="list-group list-group-flush">
@@ -46,12 +46,12 @@ const Checkout = () => {
                       Products ({totalItems})<span>${Math.round(subtotal)}</span>
                     </li>
                     <li className="list-group-item d-flex justify-content-between align-items-center px-0">
-                      Shipping
+                      Kargo
                       <span>${shipping}</span>
                     </li>
                     <li className="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
                       <div>
-                        <strong>Total amount</strong>
+                        <strong>Toplam tutar</strong>
                       </div>
                       <span>
                         <strong>${Math.round(subtotal + shipping)}</strong>
@@ -64,14 +64,14 @@ const Checkout = () => {
             <div className="col-md-7 col-lg-8">
               <div className="card mb-4">
                 <div className="card-header py-3">
-                  <h4 className="mb-0">Billing address</h4>
+                  <h4 className="mb-0">Fatura adresi</h4>
                 </div>
                 <div className="card-body">
                   <form className="needs-validation" novalidate>
                     <div className="row g-3">
                       <div className="col-sm-6 my-1">
                         <label for="firstName" className="form-label">
-                          First name
+                          Adınız
                         </label>
                         <input
                           type="text"
@@ -81,13 +81,13 @@ const Checkout = () => {
                           required
                         />
                         <div className="invalid-feedback">
-                          Valid first name is required.
+                          Adınız gereklidir.
                         </div>
                       </div>
 
                       <div className="col-sm-6 my-1">
                         <label for="lastName" className="form-label">
-                          Last name
+                          Soyadınız
                         </label>
                         <input
                           type="text"
@@ -97,13 +97,13 @@ const Checkout = () => {
                           required
                         />
                         <div className="invalid-feedback">
-                          Valid last name is required.
+                          Soyadınız gereklidir.
                         </div>
                       </div>
 
                       <div className="col-12 my-1">
                         <label for="email" className="form-label">
-                          Email
+                          Eposta
                         </label>
                         <input
                           type="email"
@@ -113,14 +113,13 @@ const Checkout = () => {
                           required
                         />
                         <div className="invalid-feedback">
-                          Please enter a valid email address for shipping
-                          updates.
+                          Lütfen geçerli ve güncel bir Eposta adresi giriniz.
                         </div>
                       </div>
 
                       <div className="col-12 my-1">
                         <label for="address" className="form-label">
-                          Address
+                          Adres
                         </label>
                         <input
                           type="text"
@@ -130,13 +129,13 @@ const Checkout = () => {
                           required
                         />
                         <div className="invalid-feedback">
-                          Please enter your shipping address.
+                         Lütfen adresinizi giriniz.
                         </div>
                       </div>
 
                       <div className="col-12">
                         <label for="address2" className="form-label">
-                          Address 2{" "}
+                          Adres 2{" "}
                           <span className="text-muted">(Optional)</span>
                         </label>
                         <input
@@ -149,7 +148,7 @@ const Checkout = () => {
 
                       <div className="col-md-5 my-1">
                         <label for="country" className="form-label">
-                          Country
+                          Ülke
                         </label>
                         <br />
                         <select className="form-select" id="country" required>
@@ -157,13 +156,13 @@ const Checkout = () => {
                           <option>India</option>
                         </select>
                         <div className="invalid-feedback">
-                          Please select a valid country.
+                          Lütfen ülke adı giriniz.
                         </div>
                       </div>
 
                       <div className="col-md-4 my-1">
                         <label for="state" className="form-label">
-                          State
+                          Şehir
                         </label>
                         <br />
                         <select className="form-select" id="state" required>
@@ -171,13 +170,13 @@ const Checkout = () => {
                           <option>Punjab</option>
                         </select>
                         <div className="invalid-feedback">
-                          Please provide a valid state.
+                          Lütfen şehir bilgisini giriniz.
                         </div>
                       </div>
 
                       <div className="col-md-3 my-1">
                         <label for="zip" className="form-label">
-                          Zip
+                          Posta kodu
                         </label>
                         <input
                           type="text"
@@ -187,19 +186,19 @@ const Checkout = () => {
                           required
                         />
                         <div className="invalid-feedback">
-                          Zip code required.
+                          Posta kodu gereklidir.
                         </div>
                       </div>
                     </div>
 
                     <hr className="my-4" />
 
-                    <h4 className="mb-3">Payment</h4>
+                    <h4 className="mb-3">Ödeme</h4>
 
                     <div className="row gy-3">
                       <div className="col-md-6">
                         <label for="cc-name" className="form-label">
-                          Name on card
+                          Kart üzerindeki isim
                         </label>
                         <input
                           type="text"
@@ -209,16 +208,16 @@ const Checkout = () => {
                           required
                         />
                         <small className="text-muted">
-                          Full name as displayed on card
+                          Kartın üzerinde görünen tam ad soyad.
                         </small>
                         <div className="invalid-feedback">
-                          Name on card is required
+                          Kart üzerindeki ad soyad bilgisi gereklidir.
                         </div>
                       </div>
 
                       <div className="col-md-6">
                         <label for="cc-number" className="form-label">
-                          Credit card number
+                          Kredi kartı numarası
                         </label>
                         <input
                           type="text"
@@ -228,13 +227,13 @@ const Checkout = () => {
                           required
                         />
                         <div className="invalid-feedback">
-                          Credit card number is required
+                          Kart numarası gereklidir.
                         </div>
                       </div>
 
                       <div className="col-md-3">
                         <label for="cc-expiration" className="form-label">
-                          Expiration
+                          Son kullanma tarihi
                         </label>
                         <input
                           type="text"
@@ -244,7 +243,7 @@ const Checkout = () => {
                           required
                         />
                         <div className="invalid-feedback">
-                          Expiration date required
+                          Bu bilgi gereklidir.
                         </div>
                       </div>
 
@@ -260,7 +259,7 @@ const Checkout = () => {
                           required
                         />
                         <div className="invalid-feedback">
-                          Security code required
+                          Güvenlik numarası gereklidir.
                         </div>
                       </div>
                     </div>
@@ -271,7 +270,7 @@ const Checkout = () => {
                       className="w-100 btn btn-primary "
                       type="submit" disabled
                     >
-                      Continue to checkout
+                      Ödemeye devam edin
                     </button>
                   </form>
                 </div>
@@ -286,7 +285,7 @@ const Checkout = () => {
     <>
       <Navbar />
       <div className="container my-3 py-3">
-        <h1 className="text-center">Checkout</h1>
+        <h1 className="text-center">Ödeme</h1>
         <hr />
         {state.length ? <ShowCheckout /> : <EmptyCart />}
       </div>
