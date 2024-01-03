@@ -13,11 +13,21 @@ const Home = () => {
           />
           <div className="card-img-overlay d-flex align-items-center">
             <div className="container">
-              <h5 className="card-title fs-1 text fw-lighter">New Season Arrivals</h5>
+              <h5 className="card-title fs-1 text fw-lighter">Sonbahar - Kış Sezonu Başladı!</h5>
               <p className="card-text fs-5 d-none d-sm-block ">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
+                Merhaba Değerli Müşterilerimiz,
+
+Sıcak yaz günlerinin ardından, şimdi soğuk rüzgarlarla dolu bir maceraya adım atma zamanı geldi! Sunduğumuz birbirinden şık ve sıcak ürünlerle dolu olan Sonbahar - Kış Sezonu başladı, ve bu sezon moda ve konforu bir araya getiriyoruz.
+
+Gardırobunuzu yenilemek veya sevdiklerinize unutulmaz bir hediye seçmek için en doğru yerdesiniz. Sonbaharın gizemli tonları ve kışın sıcaklığıyla tasarlanmış koleksiyonumuz, tarzınıza renk katacak. Sadece modayla değil, aynı zamanda fonksiyonellikle de ön planda olan ürünlerimizle, soğuk günlerde bile şıklığınızdan ödün vermeden hayatın tadını çıkarabilirsiniz.
+
+Sitemizde gezinmeye başlayın ve kaliteli kumaşlar, özgün tasarımlar ve uygun fiyatlarla dolu bu sezonun öne çıkanlarını keşfedin. Soğuk havaların getirdiği ihtiyaçları karşılamak adına sunduğumuz geniş ürün yelpazesiyle her zevke hitap ediyoruz.
+
+Unutmayın, stil sadece giyimle başlamaz; yaşam tarzınızı yansıtan aksesuarlar da önemlidir. Şıklığınızı tamamlayacak çanta, atkı, bere ve daha birçok seçenekle, tarzınızı zirveye taşıyın.
+
+Sonbahar - Kış Sezonu başladı, ve sizin için hazırlıklıyız. Sizleri sıcak, şık ve konforlu bir sezon geçirmeye davet ediyoruz.
+
+Keyifli alışverişler dileriz!
               </p>
             </div>
           </div>
