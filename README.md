@@ -1,6 +1,6 @@
-# E-Commerce Website
+# E-ticaret denemesi
 
-A Ecommerce Website made with React.js Framework.
+Üretken akademi 8.hafta projesi olarak bir Github projesi üzerinden denemeye ve öğrenmeye çalıştım. Orijinal README şu şekilde:
 
 
 ## Demo
